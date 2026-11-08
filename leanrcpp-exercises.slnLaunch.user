@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "hello-world",
+    "Projects": [
+      {
+        "Path": "hello-world\\hello-world.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "chapter-1",
+    "Projects": [
+      {
+        "Path": "chapter-01\\chapter-01.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
