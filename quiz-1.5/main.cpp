@@ -1,11 +1,14 @@
 #include <iostream>  // for std::cout and std::cin
 
+// Reads 3 numbers from user input and print them on the console
 int main()
 {
-    std::cout << "Enter a number: "; // ask user for a number
+    std::cout << "Enter three numbers: "; // ask user for a number
     int x{}; // define variable x to hold user input
-    std::cin >> x; // get number from keyboard and store it in variable x
-    std::cout << "You entered " << x << '\n';
+    int y{};
+    int z{};
+    std::cin >> x >> y >> z; // get number from keyboard and store it in variable x
+    std::cout << "You entered " << x << ", " <<  y << " and " << z << ".\n";
 
     return 0;
 }
@@ -40,4 +43,16 @@ answer: you entered 5, whitespace is skipped and it's a valid positive integer s
 
 i) 5b6
 answer: you entered 5, b is a character so everything after that is kept in buffer and only the initial number is extracted
+*/
+
+
+/*
+Question #2
+
+Ask the user to enter three values. The program should then print these values. Add an appropriate comment above function main().
+
+The program should match the following output (when run with input values 4, 5, and 6):
+
+Enter three numbers: 4 5 6
+You entered 4, 5, and 6.
 */
