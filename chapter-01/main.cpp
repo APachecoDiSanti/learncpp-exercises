@@ -35,11 +35,22 @@ int main() {
 	
 	// generates error C4700: uninitialized local variable 'a' used
 	//std::cout << a;
-	std::cout << "b: " << b << std::endl;
-	std::cout << "c: " << c << std::endl;
-	std::cout << "d: " << d << std::endl;
-	std::cout << "e: " << e << std::endl;
+	// << is the insertion operator
+	// std::endl will print a newline and force flush the buffer
+	// \n is a newline character
+	std::cout << "b: " << b << '\n';
+	std::cout << "c: " << c << '\n';
+	std::cout << "d: " << d << '\n';
+	std::cout << "e: " << e << '\n';
 	std::cout << "width: " << width << std::endl;
+
+	std::cout << "Enter two numbers separated by a space: ";
+	int x{};
+	int y{};
+	// >> is the extraction operator
+	// each line of input is terminated by \n character
+	std::cin >> x >> y;
+	std::cout << "You entered " << x << " and " << y << '\n';
 
 	return 0;
 }

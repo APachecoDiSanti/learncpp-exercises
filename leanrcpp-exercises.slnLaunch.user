@@ -12,7 +12,7 @@
     "Name": "chapter-1",
     "Projects": [
       {
-        "Path": "chapter-01\\chapter-01.vcxproj",
+        "Path": "quiz-1.5\\quiz-1.5.vcxproj",
         "Action": "Start"
       }
     ]
