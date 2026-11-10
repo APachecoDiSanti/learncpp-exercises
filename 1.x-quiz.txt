@@ -1,0 +1,13 @@
+Question #1
+What is the difference between initialization and assignment? How many times can a variable be initialized or assigned a value?
+
+Answer: Initialization is the first value assignment that a variable receives, during or right after definition.
+Assignment is when a value is assigned to a variable and may happen at any moment after the variable was defined and more than once.
+
+
+Question #2
+When does undefined behavior occur? What are the consequences of undefined behavior?
+
+Answer: Undefined behavior happens when the program executes a statement where the expected behavior is not defined by the language standard and thus it's implementation dependent.
+That means it's unrealiable as a different compiler may change results as running on a different platform. We can't rely on undefined behavior because it's inconsistent.
+Running into undefined behavior means we can no longer be sure of what will happen when the program reaches that point and it may malfunction or not.
