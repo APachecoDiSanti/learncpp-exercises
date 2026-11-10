@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter-01", "chapter-01\ch
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quiz-1.5", "quiz-1.5\quiz-1.5.vcxproj", "{6881DD69-87D5-4294-B804-E3EA255896DB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter01", "chapter01", "{49081D80-8545-4B42-9C0C-3B5A14A72450}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -44,6 +46,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{042499C7-27BE-49F4-8030-69FC1B2D1004} = {49081D80-8545-4B42-9C0C-3B5A14A72450}
+		{6881DD69-87D5-4294-B804-E3EA255896DB} = {49081D80-8545-4B42-9C0C-3B5A14A72450}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB3DC344-A190-4561-8438-25DA4D54684B}
