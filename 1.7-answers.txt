@@ -1,0 +1,30 @@
+Question #1
+Based on how you should name a variable, indicate whether each variable name is conventional (follows best practices), unconventional (compiler will accept but does not follow best practices), or invalid (will not compile), and why.
+
+int sum {};
+(Assume it’s obvious what we’re summing)
+CONVENVIONTAL
+
+int _apples {};
+UNCONVENTIONAL: variables starting with underscore are for libraries
+
+int VALUE {};
+UNCONVENTIONAL: should be all lowercase
+
+int my variable name {};
+INVALID: the space between the names will not compile
+
+int TotalCustomers {};
+UNCONVENTIONAL: Pascal casing is generally used for user defined types such as classes
+
+int void {};
+INVALID: void is a keyword so there's no identifier here for the compiler
+
+int numFruit {};
+CONVENTIONAL
+
+int 3some {};
+INVALID: Starts with a number
+
+int meters_of_pipe {};
+CONVENTIONAL
