@@ -1,0 +1,13 @@
+Question #1
+
+What is an uninitialized variable? Why should you avoid using them?
+
+answer: When a variable is defined and no explicit value has been assigned to it afterwards. The memory region it holds will be interpreted as its current value and may be different on each run.
+
+
+Question #2
+
+What is undefined behavior, and what can happen if you do something that exhibits undefined behavior?
+
+answer: Undefined behavior is how the program behaves when doing something that is not defined by the language so what happens may depend on what compiler was used or on what platform it's running.
+the observed behavior may be inconsistent, wrong, correct sometimes, and generally speaking: unreliable

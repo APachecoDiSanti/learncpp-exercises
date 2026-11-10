@@ -9,10 +9,10 @@
     ]
   },
   {
-    "Name": "chapter-1",
+    "Name": "current",
     "Projects": [
       {
-        "Path": "quiz-1.5\\quiz-1.5.vcxproj",
+        "Path": "1.6-implementation-defined\\1.6-implementation-defined.vcxproj",
         "Action": "Start"
       }
     ]
