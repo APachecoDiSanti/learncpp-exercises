@@ -1,0 +1,61 @@
+Question #1
+What is the difference between a statement and an expression?
+
+Answer: A statement may contain an expression and is terminated by a semicolon while an expression computes a value and may be an element of a statement.
+
+
+Question #2
+Indicate whether each of the following lines are statements that do not contain expressions, statements that contain expressions, or are expression statements.
+
+
+a)
+int x;
+
+Answer: Statement with no expression.
+
+
+b)
+int x = 5;
+
+Answer: Statement with an expression.
+
+
+c)
+x = 5;
+Answer: Expression statement.
+
+
+d) Extra credit:
+foo(); // foo is a function
+Answer: Expression statement, the function call produces a value.
+
+
+e) Extra credit:
+std::cout << x; // Hint: operator<< is a binary operator.
+Answer: Expression statement, std::cout and x are operands of << operator.
+
+
+Question #3
+Determine what values the following program outputs. Do not compile this program. Just work through it line by line in your head.
+
+#include <iostream>
+
+int main()
+{
+	std::cout << 2 + 3 << '\n';
+
+	int x{ 6 };
+	int y{ x - 2 };
+	std::cout << y << '\n';
+
+	int z{};
+	z = x;
+	std::cout << z * x << '\n';
+
+	return 0;
+}
+
+Answer:
+5
+4
+36
