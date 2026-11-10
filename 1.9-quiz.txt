@@ -1,0 +1,26 @@
+Question #1
+For each of the following, indicate what output they produce:
+
+a)
+std::cout << 3 + 4 << '\n';
+
+Answer: 7, followed by a new line
+
+
+b)
+std::cout << 3 + 4 - 5 << '\n';
+
+Answer: 2, followed by a new line
+
+
+c)
+std::cout << 2 + 3 * 4 << '\n';
+
+Answer: 14, followed by a new line
+
+
+d) Extra credit:
+int x { 2 };
+std::cout << (x = 5) << '\n';
+
+Answer: 5, followed by a new line
