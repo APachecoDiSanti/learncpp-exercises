@@ -12,7 +12,7 @@
     "Name": "current",
     "Projects": [
       {
-        "Path": "1.x-quiz-q3\\1.x-quiz-q3.vcxproj",
+        "Path": "2.2-get-value-from-user\\2.2-get-value-from-user.vcxproj",
         "Action": "Start"
       }
     ]
