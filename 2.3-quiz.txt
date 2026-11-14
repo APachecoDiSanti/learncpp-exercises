@@ -1,0 +1,47 @@
+Question #1
+Inspect the following programs and state what they output, or whether they will not compile.
+
+1a)
+
+#include <iostream>
+
+void printA()
+{
+    std::cout << "A\n";
+}
+
+void printB()
+{
+    std::cout << "B\n";
+}
+
+int main()
+{
+    printA();
+    printB();
+
+    return 0;
+}
+
+Answer: Output will be:
+A
+B
+
+
+1b)
+#include <iostream>
+
+void printA()
+{
+    std::cout << "A\n";
+}
+
+int main()
+{
+    std::cout << printA() << '\n';
+
+    return 0;
+}
+
+Answer: Compile error. PrintA doesn't return a value and it's expected where
+it's called.
