@@ -1,0 +1,148 @@
+Question #1
+What is a function prototype?
+
+Answer: Its declaration. The name, the return type and the parameters. No body.
+
+
+Question #2
+What is a forward declaration?
+
+Answer: Providing a declaration for an object without its definition because it
+will be defined later in the file and maybe even after it's being used.
+
+
+Question #3
+How do we declare a forward declaration for functions?
+
+Answer: Provide the prototype of the function.
+
+
+Question #4
+
+Write the function declaration for this function (use the preferred form with names):
+
+int doMath(int first, int second, int third, int fourth)
+{
+     return first + second * third / fourth;
+}
+
+Answer: int doMath(int first, int second, int third, int fourth);
+
+
+Question #5
+
+For each of the following programs, state whether they fail to compile, fail to link, or compile and link successfully. If you are not sure, try compiling them!
+
+a)
+#include <iostream>
+int add(int x, int y);
+
+int main()
+{
+    std::cout << "3 + 4 + 5 = " << add(3, 4, 5) << '\n';
+    return 0;
+}
+
+int add(int x, int y)
+{
+    return x + y;
+}
+
+Answer: Fails to compile, add() declaration doesn't have three parameters as the
+place where it's being called.
+
+
+b)
+#include <iostream>
+int add(int x, int y);
+
+int main()
+{
+    std::cout << "3 + 4 + 5 = " << add(3, 4, 5) << '\n';
+    return 0;
+}
+
+int add(int x, int y, int z)
+{
+    return x + y + z;
+}
+
+Answer: Fails to compile, add with three parameters is never defined and it's 
+being called before the definition is seen by the compiler.
+
+
+c)
+#include <iostream>
+int add(int x, int y);
+
+int main()
+{
+    std::cout << "3 + 4 = " << add(3, 4) << '\n';
+    return 0;
+}
+
+int add(int x, int y, int z)
+{
+    return x + y + z;
+}
+
+Answer: Linker failure. Can't find add with two parameters to link the call
+found in main.
+
+
+d)
+#include <iostream>
+int add(int x, int y, int z);
+
+int main()
+{
+    std::cout << "3 + 4 + 5 = " << add(3, 4, 5) << '\n';
+    return 0;
+}
+
+int add(int z, int y, int x) // names don't match the declaration
+{
+    return x + y + z;
+}
+
+Answer: Compiles and links. The names not matching doesn't matter, just the 
+number and types.
+
+
+e)
+#include <iostream>
+int add(int, int, int); // no parameter names
+
+int main()
+{
+    std::cout << "3 + 4 + 5 = " << add(3, 4, 5) << '\n';
+    return 0;
+}
+
+int add(int x, int y, int z)
+{
+    return x + y + z;
+}
+
+Answer: Compiles and links without issue.
+
+
+f)
+
+#include <iostream>
+
+int add(int x, int y);
+
+int add(int x, int y, int z)
+{
+    return x + y + z;
+}
+
+int main()
+{
+    std::cout << "3 + 4 + 5 = " << add(3, 4, 5) << '\n';
+    return 0;
+}
+
+Answer: Compiles and links without issue, the declaration for add with two
+parameters is not used so no problems.
