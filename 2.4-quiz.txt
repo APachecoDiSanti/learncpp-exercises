@@ -1,0 +1,79 @@
+Question #1
+What’s wrong with this program fragment?
+
+#include <iostream>
+
+void multiply(int x, int y)
+{
+    return x * y;
+}
+
+int main()
+{
+    std::cout << multiply(4, 5) << '\n';
+
+    return 0;
+}
+
+Answer: The return type of multiply is void an it will not compile.
+Should be int instead.
+
+
+Question #2
+What two things are wrong with this program fragment?
+
+#include <iostream>
+
+int multiply(int x, int y)
+{
+    int product { x * y };
+}
+
+int main()
+{
+    std::cout << multiply(4) << '\n';
+
+    return 0;
+}
+
+Answer: Multiply doesn't have a return statement and its return type isn't void
+so this will produce a compile error. The call to multiply from main is passing
+one argument instead of the expected two and will also produce a compile error.
+
+
+Question #3
+What value does the following program print?
+
+#include <iostream>
+
+int add(int x, int y, int z)
+{
+    return x + y + z;
+}
+
+int multiply(int x, int y)
+{
+    return x * y;
+}
+
+int main()
+{
+    std::cout << multiply(add(1, 2, 3), 4) << '\n';
+
+    return 0;
+}
+
+Answer: It will print 24
+
+
+Question #4
+
+Write a function called doubleNumber() that takes one integer parameter. The function should return double the value of the parameter.
+
+Show Solution
+
+Question #5
+
+    Write a complete program that reads an integer from the user, doubles it using the doubleNumber() function you wrote in the previous quiz question, and then prints the doubled value out to the console.
+
+Show Solution
