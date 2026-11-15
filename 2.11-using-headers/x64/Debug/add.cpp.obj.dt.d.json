@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\pache\\source\\repos\\learncpp-exercises\\2.11-using-headers\\add.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\pache\\source\\repos\\learncpp-exercises\\2.11-using-headers\\add.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
