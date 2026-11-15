@@ -12,7 +12,7 @@
     "Name": "current",
     "Projects": [
       {
-        "Path": "2.12-square-guard\\2.12-square-guard.vcxproj",
+        "Path": "2.x-quiz-q3\\2.x-quiz-q3.vcxproj",
         "Action": "Start"
       }
     ]
