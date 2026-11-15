@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\pache\\source\\repos\\learncpp-exercises\\2.12-square-guard\\wave.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\pache\\source\\repos\\learncpp-exercises\\2.12-square-guard\\square.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
