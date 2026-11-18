@@ -58,7 +58,8 @@
 
 ## 2.5 - Introduction to local scope
 1. Define your local variables as close to their first use as reasonable.
-2. When a variable is needed within a function:    1. Use a function parameter when the caller will pass in the initialization value for the variable as an argument.
+2. When a variable is needed within a function:
+    1. Use a function parameter when the caller will pass in the initialization value for the variable as an argument.
     2. Use a local variable otherwise.
 
 ## 2.7 - Forward declarations and definitions
@@ -100,4 +101,7 @@
 16. Only #include what you need (don’t include everything just because you can).
 17. Do not #include .cpp files.
 18. Prefer putting documentation on what something does or how to use it in the header. It’s more likely to be seen there. Documentation describing how something works should remain in the source files.
- 
+
+
+## 3.10 - Finding issues before they become problems
+1. Use a static analysis tool on your programs to help find areas where your code is non-compliant with best practices.
