@@ -113,3 +113,7 @@
 
 ## 4.4 - Signed integers
 1. Prefer the shorthand types that do not use the `int` suffix or `signed` prefix.
+
+
+## 4.5 - Unsigned integers, and why to avoid them
+1. Favor signed numbers over unsigned numbers for holding quantities (even quantities that should be non-negative) and mathematical operations. Avoid mixing signed and unsigned numbers.
