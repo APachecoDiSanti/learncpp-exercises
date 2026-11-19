@@ -1,0 +1,16 @@
+Question #1
+What would the range of a 5-bit signed integer be?
+
+Answer: 1 bit for sign, and 4 for magnitude gives us a range of -2^4 to 2^4-1
+or a range from -16 to 15
+
+
+Question #2
+a) What is the result of 13 / 5?
+
+Answer: Since this is integer division, the result is 2
+
+
+b) What is the result of -13 / 5?
+
+Answer: Since this is integer division, the result is -2

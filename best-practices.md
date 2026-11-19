@@ -105,3 +105,11 @@
 
 ## 3.10 - Finding issues before they become problems
 1. Use a static analysis tool on your programs to help find areas where your code is non-compliant with best practices.
+
+
+## 4.2 - Void
+1. Use an empty parameter list instead of void to indicate that a function has no parameters.
+
+
+## 4.4 - Signed integers
+1. Prefer the shorthand types that do not use the `int` suffix or `signed` prefix.
