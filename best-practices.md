@@ -117,3 +117,19 @@
 
 ## 4.5 - Unsigned integers, and why to avoid them
 1. Favor signed numbers over unsigned numbers for holding quantities (even quantities that should be non-negative) and mathematical operations. Avoid mixing signed and unsigned numbers.
+
+
+## 4.6 - Fixed-width integers and size_t
+1. Use a fixed-width integer type when you need an integral type that has a guaranteed range.
+2. Avoid the fast and least integral types because they may exhibit different behaviors on architectures where they resolve to different sizes.
+3. Prefer int when the size of the integer doesn’t matter (e.g. the number will always fit within the range of a 2-byte signed integer). For example, if you’re asking the user to enter their age, or counting from 1 to 10, it doesn’t matter whether int is 16-bits or 32-bits (the numbers will fit either way). This will cover the vast majority of the cases you’re likely to run across.
+4. Prefer std::int#_t when storing a quantity that needs a guaranteed range.
+5. Prefer std::uint#_t when doing bit manipulation or well-defined wrap-around behavior is required (e.g. for cryptography or random number generation).
+6. Avoid the following when possible:
+    1. short and long integers (prefer a fixed-width integer type instead).
+    2. The fast and least integral types (prefer a fixed-width integer type instead).
+    3. Unsigned types for holding quantities (prefer a signed integer type instead).
+    4. The 8-bit fixed-width integer types (prefer a 16-bit fixed-width integer type instead).
+    5. Any compiler-specific fixed-width integers (for example, Visual Studio defines __int8, __int16, etc…)
+7. If you use std::size_t explicitly in your code, #include one of the headers that defines std::size_t (we recommend <cstddef>).
+8. Using sizeof does not require a header (even though it returns a value whose type is std::size_t).
