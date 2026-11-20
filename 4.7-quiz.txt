@@ -1,0 +1,35 @@
+Question #1
+Convert the following numbers to scientific notation (using an e to represent the exponent) and determine how many significant digits each has.
+
+Remember, keep trailing zeros after a decimal point, drop trailing zeros if there is no decimal point.
+
+a) 34.50
+Answer: 3.450e1, 4 digits
+
+
+b) 0.004000
+Answer: 4.000e-3, 4 digits
+
+
+c) 123.005
+Answer: 1.23005e2, 6 digits
+
+
+d) 146000
+Answer: 1.46e5, 3 digits
+
+
+e) 146000.001
+Answer: 1.46000001e5, 9 digits
+
+
+f) 0.0000000008
+Answer: 8.0e-10, 1 digit
+
+
+g) 34500.0
+Answer: 3.45000e4, 6 digits
+
+
+h) 146000 (assume you have knowledge that zeros are significant)
+Answer: 1.46000e5, 6 digits
