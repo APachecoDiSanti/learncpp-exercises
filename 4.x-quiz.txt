@@ -1,0 +1,27 @@
+Question #1
+Pick the appropriate data type for a variable in each of the following situations. Be as specific as possible. 
+If the answer is an integer, pick int (if size isn’t important), or a specific fixed-width integer type (e.g. std::int16_t) based on range.
+
+a) The age of the user (in years) (assume the size of the type isn’t important)
+Answer: int, values will range between 1 and ~120
+
+b) Whether the user wants the application to check for updates
+Answer: boolean, this is a logical condition
+
+c) pi (3.14159265)
+Answer: double, we have 9 digits of significand
+
+d) The number of pages in a textbook (assume size is not important)
+Answer: int, will be at most a few thousand
+
+e) The length of a couch in feet, to 2 decimal places (assume size is important)
+Answer: float, 2 decimal places and not many digits on the integer side 
+
+f) How many times you’ve blinked since you were born (note: answer is in the millions)
+Answer: std::int32_t, if the answer is millions with 32 bits we can reach around 4 billion
+
+g) A user selecting an option from a menu by letter
+Answer: char, it's one letter
+
+h) The year someone was born (assuming size is important)
+Answer: std::int16_t, should manage a few thousand and both A.C and B.C years
