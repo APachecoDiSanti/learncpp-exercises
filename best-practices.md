@@ -139,3 +139,7 @@
 1. Always make sure the type of your literals match the type of the variables they’re being assigned to or used to initialize. Otherwise an unnecessary conversion will result, possibly with a loss of precision.
 2. Favor double over float unless space is at a premium, as the lack of precision in a float will often lead to inaccuracies.
 3. Avoid division by 0.0, even if your compiler supports it.
+
+# 4.11 - Chars
+1.Single characters should usually be single-quoted, not double-quoted (e.g. `'t'` or `'\n'`, not `"t"` or `"\n"`). One possible exception occurs when doing output, where it can be preferential to double quote everything for consistency (see lesson 1.5 -- Introduction to iostream: cout, cin, and endl).
+2. Avoid multicharacter literals (e.g. `'56'`).
