@@ -12,7 +12,7 @@
     "Name": "current",
     "Projects": [
       {
-        "Path": "ieee-754\\ieee-754.vcxproj",
+        "Path": "4.10-quiz-q2\\4.10-quiz-q2.vcxproj",
         "Action": "Start"
       }
     ]

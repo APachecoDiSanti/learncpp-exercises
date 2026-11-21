@@ -1,0 +1,39 @@
+Question #1
+What is an early return, and what is its behavior?
+
+Answer: An early return is when a function returns after evaluating a condition
+and before reaching the last statement of the function where it normally returns.
+
+
+
+Question #3
+
+How can the length of the following code be reduced (without changing the formatting)?
+
+#include <iostream>
+
+bool isAllowedToTakeFunRide()
+{
+  std::cout << "How tall are you? (cm)\n";
+
+  double height{};
+  std::cin >> height;
+
+  if (height >= 140.0)
+    return true;
+  else
+    return false;
+}
+
+int main()
+{
+  if (isAllowedToTakeFunRide())
+    std::cout << "Have fun!\n";
+  else
+    std::cout << "Sorry, you're too short.\n";
+
+  return 0;
+}
+
+Answer: Replace the if-else with a direct return of the conditional expression:
+return height >= 140.0
