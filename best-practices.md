@@ -133,3 +133,9 @@
     5. Any compiler-specific fixed-width integers (for example, Visual Studio defines __int8, __int16, etc…)
 7. If you use std::size_t explicitly in your code, #include one of the headers that defines std::size_t (we recommend <cstddef>).
 8. Using sizeof does not require a header (even though it returns a value whose type is std::size_t).
+
+
+# 4.8 - Floating point numbers
+1. Always make sure the type of your literals match the type of the variables they’re being assigned to or used to initialize. Otherwise an unnecessary conversion will result, possibly with a loss of precision.
+2. Favor double over float unless space is at a premium, as the lack of precision in a float will often lead to inaccuracies.
+3. Avoid division by 0.0, even if your compiler supports it.

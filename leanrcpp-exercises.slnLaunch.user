@@ -12,7 +12,7 @@
     "Name": "current",
     "Projects": [
       {
-        "Path": "4.-sizeof-types\\4.-sizeof-types.vcxproj",
+        "Path": "ieee-754\\ieee-754.vcxproj",
         "Action": "Start"
       }
     ]
