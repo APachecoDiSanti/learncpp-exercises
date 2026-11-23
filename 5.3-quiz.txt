@@ -1,0 +1,4 @@
+Question #1
+Using the tables above, what is 32 in binary and hexadecimal?
+
+Answer: in Binary 100000, and in hexadecimal 20
