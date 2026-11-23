@@ -143,3 +143,10 @@
 # 4.11 - Chars
 1.Single characters should usually be single-quoted, not double-quoted (e.g. `'t'` or `'\n'`, not `"t"` or `"\n"`). One possible exception occurs when doing output, where it can be preferential to double quote everything for consistency (see lesson 1.5 -- Introduction to iostream: cout, cin, and endl).
 2. Avoid multicharacter literals (e.g. `'56'`).
+
+# 5.1 - Constant variables (named constants)
+1. Place const before the type (because it is more conventional to do so).
+2. Don’t use const for value parameters.
+3. Don’t use const when returning by value.
+4. Make variables constant whenever possible. Exception cases include by-value function parameters and by-value return types, which should generally not be made constant.
+5. Prefer constant variables over object-like macros with substitution text.
