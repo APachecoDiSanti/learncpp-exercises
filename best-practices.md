@@ -154,3 +154,8 @@
 # 5.2 - Literals
 1. Prefer literal suffix L (upper case) over l (lower case).
 2. Avoid magic numbers in your code (use constexpr variables instead, see lesson 5.6 -- Constexpr variables).
+
+# 5.6 - Constexpr variables
+1. Any constant variable whose initializer is a constant expression should be declared as `constexpr`.
+2. Any constant variable whose initializer is not a constant expression (making it a runtime constant) should be declared as `const`.
+3. Caveat: In the future we will discuss some types that are not fully compatible with `constexpr` (including `std::string`, `std::vector`, and other types that use dynamic memory allocation). For constant objects of these types, either use `const` instead of `constexpr`, or pick a different type that is constexpr compatible (e.g. `std::string_view` or `std::array`).
