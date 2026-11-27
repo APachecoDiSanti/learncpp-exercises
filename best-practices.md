@@ -159,3 +159,8 @@
 1. Any constant variable whose initializer is a constant expression should be declared as `constexpr`.
 2. Any constant variable whose initializer is not a constant expression (making it a runtime constant) should be declared as `const`.
 3. Caveat: In the future we will discuss some types that are not fully compatible with `constexpr` (including `std::string`, `std::vector`, and other types that use dynamic memory allocation). For constant objects of these types, either use `const` instead of `constexpr`, or pick a different type that is constexpr compatible (e.g. `std::string_view` or `std::array`).
+
+
+# 5.7 - Introduction to std::string
+1. If using `std::getline()` to read strings, use `std::cin >> std::ws` input manipulator to ignore leading whitespace. This needs to be done for each `std::getline()` call, as `std::ws` is not preserved across calls.
+2. Do not pass `std::string` by value, as it makes an expensive copy.
